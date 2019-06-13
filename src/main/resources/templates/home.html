@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="text-align: center">
+    <h1>File Upload Page</h1>
+    <form th:action="@{/home}" method="post" enctype="multipart/form-data" >
+    <h4>Вибрати файл</h4>
+    <input type="file" name="file" value="Вибрати" />
+    <br>
+    <h4>Вибрати тип</h4>
+    <select name="type">
+            <option value="text">Text</option>
+            <option value="image">Image</option>
+    </select>
+    <h4>Вибрати дату до якої файл актуальний</h4>
+    <input type="datetime-local" name="dateTime">
+    <br><br>
+
+    <input type="submit" value="Підтвердити" />
+</form>
+</div>
+</body>
+
+</html>
+
+
